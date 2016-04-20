@@ -5,13 +5,14 @@ defmodule HelloPhoenix.PageController do
 # plug :render when action in [:index]
 
   def index(conn, params) do
-    conn
+    #conn
     #|> put_flash(:info, "Welcome to Phoenix, from flash info!")
     #|> put_flash(:error, "Let's pretend to have an error.")
     #|> put_layout("admin.html")
-    |> render "index.html"
+    #|> render "index.html"
     #render conn, "index.text", message: params["message"]
     #redirect conn, to: "/redirect_test"
+    render conn, "index.html"
   end
   
   def redirect_test(conn, _params) do

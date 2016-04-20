@@ -17,7 +17,8 @@ defmodule HelloPhoenix.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
-    get "/redirect_test", PageController, :redirect_test, as: :redirect_test
+    resources "/users", UserController
+  #  get "/redirect_test", PageController, :redirect_test, as: :redirect_test
   #  get "/show-id/:id", PageController, :show
   #  resources "/reviews", ReviewController
   #  resources "/posts", PostController, only: [:index, :show]
